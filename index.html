@@ -4,30 +4,40 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<title>Nick @ Nite Giphy</title>
 </head>
 
 <body>
 	<div id="container">
+
 		<div id ="header">
-			<h1>Classic Nick @ Nite Shows</h1>
+			<h1>Classic <span><img src="assets/images/nick.jpg" alt="Nick at Nite Logo" id="nick-image"></span> Shows</h1>
 		</div>
 		
-		<button data-television="The Dick Van Dyke Show">The Dick Van Dyke Show</button>
-		<button data-televison="Leave it to Beaver">Leave it to Beaver</button>
-		<button data-televison="Cheers">Cheers</button>
-		<button data-televison="Diff'rent Strokes">Diff'rent Strokes</button>
-		<button data-televison="The Mary Tyler Moore Show">The Mary Tyler Moore Show</button>
-		<button data-televison="Mork and Mindy">Mork and Mindy</button>
-		<button data-televison="Welcome Back, Kotter">Welcome Back, Kotter</button>
-		<button data-televison="Adventures of Superman">Adventures of Superman</button>
-		<button data-televison="Dragnet">Dragnet</button>
-		<button data-televison="Get Smart">Get Smart</button>
+		<div id="buttonArea">
+			<button data-television="The Dick Van Dyke Show">The Dick Van Dyke Show</button>
+			<button data-televison="Leave it to Beaver">Leave it to Beaver</button>
+			<button data-televison="Cheers">Cheers</button>
+			<button data-televison="Diff'rent Strokes">Diff'rent Strokes</button>
+			<button data-televison="The Mary Tyler Moore Show">The Mary Tyler Moore Show</button>
+			<button data-televison="Mork and Mindy">Mork and Mindy</button>
+			<button data-televison="Welcome Back, Kotter">Welcome Back, Kotter</button>
+			<button data-televison="Adventures of Superman">Adventures of Superman</button>
+			<button data-televison="Dragnet">Dragnet</button>
+			<button data-televison="Get Smart">Get Smart</button>
+			</div>
 
 		<div id="gifsDumpArea"> 
-   	 </div>
+   	 	</div>
 
-    </div>
+   	 		<form>
+   	 			<p id= "addShow">Add a TV Show</p>
+				<input type="text" id="addText">
+					<button id="addbutton" type="button">Submit</button>
+			</form>
+
+   	 	</div>
 
 
     <script type="text/javascript" src="assets/javascript/jquery-1.12.4.min.js"></script>

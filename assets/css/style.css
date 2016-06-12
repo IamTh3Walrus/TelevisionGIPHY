@@ -1,8 +1,38 @@
 h1{
 	font-size: 50px;
 	margin-bottom: 10px;
+	font-family: 'Bangers';
+	text-shadow: 3px 3px #ffd700;
+	
 }
 
 body{
 	background-color: #B23AEE;
+}
+
+#addbutton{
+	color:#000;
+	background:#ffff33;
+	border:none;
+}
+
+form{
+	float:right;
+	margin-top: 20px;
+	margin-right:20px;
+}
+
+#gifsDumpArea{
+	float:left;
+}
+
+button{
+	color:#000;
+	background:#ffff33;
+	border:none;
+}
+
+#nick-image{
+	width: 200px;
+	height: 150px;
 }

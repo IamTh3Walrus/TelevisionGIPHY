@@ -1,7 +1,13 @@
+$(document).ready(function() {
+
 $('button').on('click', function() {
 	var television = $(this).data('television');
 	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + television + 
 	"&api_key=dc6zaTOxFJmzC&limit=10";
+
+	$('button').click(function() {
+  		$("#gifsDumpArea").empty();
+	});
 
 	$.ajax({url: queryURL, method: 'GET'})
 		.done(function(response){
@@ -25,5 +31,8 @@ $('button').on('click', function() {
 			}
 
 		});
+		
+	return false;
+});
 
 });
