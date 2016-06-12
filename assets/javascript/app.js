@@ -32,7 +32,20 @@ $('button').on('click', function() {
 
 		});
 		
-	return false;
+	
 });
 
+var tvCount = 0;
+	$("#addText").on("click", function(){
+		var tvValue = $('#addText').val().trim();
+		var newShow = $('<button>');
+		newShow.attr("id", "show-" + tvCount);
+		newShow.html(tvValue);
+		$("#buttonArea").append(newShow);
+		$('#addText').val("");
+
+		tvCount++;
+
+	});
+	 return false;
 });
