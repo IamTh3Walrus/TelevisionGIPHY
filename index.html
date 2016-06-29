@@ -1,45 +1,31 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-	<title>Nick @ Nite Giphy</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <title>Nick @ Nite Giphy</title>
 </head>
+<div id="header">
+    <h1>Classic <span><img src="assets/images/nick.jpg" alt="Nick at Nite Logo" id="nick-image"></span> Shows</h1>
+</div>
 
 <body>
-	<div id="container">
-
-		<div id ="header">
-			<h1>Classic <span><img src="assets/images/nick.jpg" alt="Nick at Nite Logo" id="nick-image"></span> Shows</h1>
-		</div>
-		
-		<div id="buttonArea">
-			<button data-television="The Dick Van Dyke Show">The Dick Van Dyke Show</button>
-			<button data-televison="Leave it to Beaver">Leave it to Beaver</button>
-			<button data-televison="Cheers">Cheers</button>
-			<button data-televison="Diff'rent Strokes">Diff'rent Strokes</button>
-			<button data-televison="The Mary Tyler Moore Show">The Mary Tyler Moore Show</button>
-			<button data-televison="Mork and Mindy">Mork and Mindy</button>
-			<button data-televison="Welcome Back, Kotter">Welcome Back, Kotter</button>
-			<button data-televison="Adventures of Superman">Adventures of Superman</button>
-			<button data-televison="Dragnet">Dragnet</button>
-			<button data-televison="Get Smart">Get Smart</button>
-			</div>
-
-		<div id="gifsDumpArea"> 
-   	 	</div>
-
-   	 		<form>
-  			<h2>Add a TV Show</h2><input type="text" id="addText"><input type="submit" value="Add Show" id="addbutton"></h2>
-			</form>
-
-   	 	</div>
-
-
+    <div id="televisionButtons">
+    </div>
+    <form id="television-form">
+        <label for="television-input">Add a TV Show</label>
+        <input type="text" id="television-input">
+        <br>
+        <input id="addShow" type="submit" value="Submit">
+    </form>
+    <div id="shows">
+    </div>
     <script type="text/javascript" src="assets/javascript/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"> </script>
-	
+    <script type="text/javascript" src="assets/javascript/app.js">
+    </script>
 </body>
+
 </html>

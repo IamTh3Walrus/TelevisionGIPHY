@@ -1,38 +1,66 @@
-h1{
-	font-size: 50px;
-	margin-bottom: 10px;
-	font-family: 'Bangers';
-	text-shadow: 3px 3px #ffd700;
-	
+body {
+    font: 18px arial, sans-serif;
+    background: #B23AEE;
 }
 
-body{
-	background-color: #B23AEE;
+#shows {
+    width: 70%;
 }
 
-#addbutton{
-	color:#000;
-	background:#ffff33;
-	border:none;
+.television-item {
+    float: left;
+    padding: 10px;
 }
 
-form{
-	float:right;
-	margin-top: 20px;
-	margin-right:20px;
+form {
+    width: 30%;
+    float: right;
+    padding: 20px;
 }
 
-#gifsDumpArea{
-	float:left;
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-button{
-	color:#000;
-	background:#ffff33;
-	border:none;
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 18px;
 }
 
-#nick-image{
-	width: 200px;
-	height: 150px;
+button,
+input[type="submit"] {
+    background: #ffff33;
+    color: #000;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #bbb;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #e6e600;
+}
+
+button.active {
+    background: #334E4D;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Bangers';
+    text-shadow: 3px 3px #ffd700;
+}
+
+#nick-image {
+    width: 200px;
+    height: 150px;
 }
