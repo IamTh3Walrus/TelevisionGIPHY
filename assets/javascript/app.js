@@ -73,10 +73,10 @@ $('#addShow').on('click', function() {
     var newShow = $('input').eq(0).val();
 
     if (newShow.length > 2) {
-        shows.push(newShow);
+        tvShows.push(newShow);
     }
 
-    populateButtons(shows, 'televisionButton', '#televisionButtons');
+    populateButtons(tvShows, 'televisionButton', '#televisionButtons');
 
     return false;
 });
